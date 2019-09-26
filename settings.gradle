@@ -1,0 +1,2 @@
+include ':app', ':introslider'
+rootProject.name='My IntroSlider'

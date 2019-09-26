@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IntroSlider">
+        <attr name="delay_duration" format="integer"/>
+        <attr name="animation_duration" format="integer"/>
+        <attr name="title_image_translation" format="float"/>
+        <attr name="backGround_image_scaleType" format="enum">
+            <enum name="matrix" value="0" />
+            <enum name="fitXY" value="1" />
+            <enum name="fitStart" value="2" />
+            <enum name="fitCenter" value="3" />
+            <enum name="fitEnd" value="4" />
+            <enum name="center" value="5" />
+            <enum name="centerCrop" value="6" />
+            <enum name="centerInside" value="7" />
+        </attr>
+        <attr name="bottom_dot_radius" format="dimension"/>
+        <attr name="show_bottom_dots" format="boolean"/>
+        <attr name="title_in_center" format="boolean"/>
+        <attr name="background_images" format="reference" />
+        <attr name="title_images" format="reference" />
+        <attr name="titles" format="reference" />
+        <attr name="sub_titles" format="reference" />
+
+
+
+
+
+
+    </declare-styleable>
+</resources>

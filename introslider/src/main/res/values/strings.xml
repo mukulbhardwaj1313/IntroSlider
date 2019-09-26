@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">IntroSlider</string>
+    <string name="title_not_found_message">Titles not provided. Use method provideTitles() to provide titles</string>
+    <string name="resource_not_found">Resource provided in title image is not a drawable</string>
+    <string name="resource_not_found_bg">Resource provided in background image is not a drawable</string>
+
+</resources>
