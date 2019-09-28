@@ -60,14 +60,14 @@ public class IntroSlider extends RelativeLayout {
     public IntroSlider(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         this.context=context;
-        init(attrs);
         build();
+        init(attrs);
     }
     public IntroSlider(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context=context;
-        init(attrs);
         build();
+        init(attrs);
     }
 
 
