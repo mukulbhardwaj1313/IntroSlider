@@ -354,6 +354,8 @@ public class IntroSlider extends RelativeLayout {
             for (int i = 0; i < resourceArray.length(); i++) {
                 title_image_logo[i]=resourceArray.getResourceId(i, 0);
             }
+            setTitleImage1(0);
+            setBackGroundImage1(0);
             resourceArray.recycle();
         }
 
