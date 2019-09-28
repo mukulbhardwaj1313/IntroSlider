@@ -3,7 +3,9 @@ IntroSlider is a simple library which eliminates the need of separate IntroActiv
 
 
 ## Preview
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/3sc01M0HtCU/0.jpg)](http://www.youtube.com/watch?v=3sc01M0HtCU "Video Title")
+<img src="https://media.giphy.com/media/YRVep22l3z0Wqddv2t/giphy.gif" width="240px" height="480px"/>
+
+
 ## Usage
 
 define arrays of String and drawable 
