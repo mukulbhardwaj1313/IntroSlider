@@ -46,10 +46,11 @@ public class IntroAdapter extends PagerAdapter {
     @androidx.annotation.NonNull
     @Override
     public Object instantiateItem(@androidx.annotation.NonNull ViewGroup container, int position) {
-        View view = View.inflate(container.getContext(), R.layout.fragment_intro_view_layout, null);
+        View view=new AdapterRelativeLayoutCell(context);
         container.addView(view);
-        AppCompatTextView headerTextView = view.findViewById(R.id.header_text);
-        AppCompatTextView messageTextView = view.findViewById(R.id.message_text);
+
+        AppCompatTextView headerTextView = view.findViewById(R.id.headerTextView);
+        AppCompatTextView messageTextView = view.findViewById(R.id.messageTextView);
         try{
             headerTextView.setText(context.getString(titles[position]));
         }catch (Exception ignored){ }

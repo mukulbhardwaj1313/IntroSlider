@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="headerTextView" type="id"/>
+    <item name="messageTextView" type="id"/>
+    <item name="bottom_pages" type="id"/>
+    <item name="viewPager" type="id"/>
+    <item name="title_image1" type="id"/>
+    <item name="title_image2" type="id"/>
+    <item name="bg_image1" type="id"/>
+    <item name="bg_image2" type="id"/>
+</resources>

@@ -6,7 +6,6 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.os.Handler;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
@@ -24,7 +23,6 @@ public class IntroSlider extends RelativeLayout {
 
     private ViewPager viewPager;
     private ImageView title_image1,title_image2, bg_image1, bg_image2;
-    private LayoutInflater mInflater;
     private ViewGroup bottomPages;
 
     private int delay_duration =300;
@@ -54,7 +52,6 @@ public class IntroSlider extends RelativeLayout {
 
     public IntroSlider(Context context)  {
         super(context);
-        mInflater = LayoutInflater.from(context);
         this.context=context;
         build();
 
@@ -62,7 +59,6 @@ public class IntroSlider extends RelativeLayout {
     }
     public IntroSlider(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-        mInflater = LayoutInflater.from(context);
         this.context=context;
         init(attrs);
         build();
@@ -70,7 +66,6 @@ public class IntroSlider extends RelativeLayout {
     public IntroSlider(Context context, AttributeSet attrs) {
         super(context, attrs);
         this.context=context;
-        mInflater = LayoutInflater.from(context);
         init(attrs);
         build();
     }
@@ -269,26 +264,30 @@ public class IntroSlider extends RelativeLayout {
     public void setOnSlideChangeListner(OnSlideChangeListner onSlideChangeListner){
         this.onSlideChangeListner=onSlideChangeListner;
     }
+
     private void build()  {
 
-            View v = mInflater.inflate(R.layout.intro_slider_layout, this, true);
-            title_image1 = v.findViewById(R.id.title_image1);
-            title_image2 = v.findViewById(R.id.title_image2);
-            bg_image1 = v.findViewById(R.id.bg_image1);
-            bg_image2 = v.findViewById(R.id.bg_image2);
-            viewPager = v.findViewById(R.id.viewPager);
-            bottomPages = v.findViewById(R.id.bottom_pages);
+
+        this.addView(new SliderLayout(context));
+        View v=this.getRootView();
 
 
+        title_image1 = v.findViewById(R.id.title_image1);
+        title_image2 = v.findViewById(R.id.title_image2);
+        bg_image1 = v.findViewById(R.id.bg_image1);
+        bg_image2 = v.findViewById(R.id.bg_image2);
+        viewPager = v.findViewById(R.id.viewPager);
+        bottomPages = v.findViewById(R.id.bottom_pages);
 
-            bg_image1.setAlpha(0f);
-            bg_image2.setAlpha(0f);
-            viewPager.setAlpha(0f);
-            title_image2.setAlpha(1f);
-            title_image1.setAlpha(1f);
+
+        bg_image1.setAlpha(0f);
+        bg_image2.setAlpha(0f);
+        viewPager.setAlpha(0f);
+        title_image2.setAlpha(1f);
+        title_image1.setAlpha(1f);
 
 
-            setBackGroundImageScaleType(scaleType);
+        setBackGroundImageScaleType(scaleType);
 
     }
 
@@ -417,11 +416,6 @@ public class IntroSlider extends RelativeLayout {
         this.translation_length = -translation_length;
         return this;
     }
-//    private IntroSlider setTitleImageScaleType(ImageView.ScaleType scaleType){
-//        title_image1.setScaleType(scaleType);
-//        title_image2.setScaleType(scaleType);
-//        return this;
-//    }
     public IntroSlider setBackGroundImageScaleType(ImageView.ScaleType scaleType){
         bg_image1.setScaleType(scaleType);
         bg_image2.setScaleType(scaleType);
