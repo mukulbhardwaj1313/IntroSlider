@@ -9,6 +9,9 @@ IntroSlider is a simple library which eliminates the need of separate IntroActiv
 
 https://drive.google.com/file/d/11CxGjhZ9OcXWLY3oLhcHOg-Q0IXfdVdr/view?usp=drivesdk
 
+## Demo project link
+https://github.com/mukulbhardwaj1313/IntroSliderDemo
+
 ## Usage
 
 define arrays of String and drawable 
