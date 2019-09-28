@@ -5,6 +5,9 @@ IntroSlider is a simple library which eliminates the need of separate IntroActiv
 ## Preview
 <img src="https://media.giphy.com/media/YRVep22l3z0Wqddv2t/giphy.gif" width="240px" height="480px"/>
 
+## Demo apk
+
+https://drive.google.com/file/d/11CxGjhZ9OcXWLY3oLhcHOg-Q0IXfdVdr/view?usp=drivesdk
 
 ## Usage
 
