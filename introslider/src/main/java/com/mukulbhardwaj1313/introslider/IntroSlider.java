@@ -121,6 +121,9 @@ public class IntroSlider extends RelativeLayout {
         introAdapter.setTitleInCenter(titleInCenter);
 
         viewPager.setAdapter(introAdapter);
+        if (onSlideChangeListner!=null){
+            onSlideChangeListner.onPageChanged(0);
+        }
         viewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
 
