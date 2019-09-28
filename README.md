@@ -1,5 +1,5 @@
 # IntroSlider
-IntroSlider is a simple library which eliminates the need of separate IntroActivity.
+IntroSlider is a simple library which eliminates the need of separate IntroActivity by adding this feature to splash screen.
 
 
 ## Preview
