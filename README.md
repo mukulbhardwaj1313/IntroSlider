@@ -34,7 +34,7 @@ Define IntroSlider in splash screen
                 .provideTitleImages(title_image_logo)
                 .provideTitles(titles)
                 .provideTextColor(text_color)      //provideTextColor(int) method will have priority above provideTextColor(int[])
-//                .provideTextColor(R.color.colorAccent)
+//                .provideTextColor(R.color.colorAccent)   // this method will set single colour for all titles and message
 
                 .setDelayDuration(900)         //default 300
                 .setAnimationDuration(900)     //default 900
