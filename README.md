@@ -71,7 +71,7 @@ to check current page
 
 
 
-call below method to start slides and animation
+call ```initiateAnimation()``` method to start slides and animation
 e.g. if you want to check whether a user visited first time or not
 ```
                 if(firstTimeUser){
