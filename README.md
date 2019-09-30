@@ -69,11 +69,15 @@ to check current page
         });
 ```
 
+
+
 call below method to start slides and animation
 e.g. if you want to check whether a user visited first time or not
 ```
                 if(firstTimeUser){
-                introSlider.initiateAnimation();            // initiateAnimation method must be called after provideTitles
+                //this method will initiae animation
+                // initiateAnimation method must be called after provideTitles
+                introSlider.initiateAnimation();          
                 }else{
                 // go to login/main ancivity
                 }
